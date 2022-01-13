@@ -1,0 +1,31 @@
+{
+  "name": "@silencerweb/tailwind-preset",
+  "version": "0.1.18",
+  "main": "dist/index.js",
+  "repository": "https://github.com/pixel-point/tailwind-preset.git",
+  "bugs": "https://github.com/pixel-point/tailwind-preset/issues",
+  "homepage": "https://github.com/pixel-point/tailwind-preset#README",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && babel src -d dist/",
+    "format": "prettier --write .",
+    "lint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.jsx --ignore-path .gitignore .",
+    "prepare": "husky install"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.8",
+    "tailwindcss-safe-area": "^0.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1"
+  }
+}
